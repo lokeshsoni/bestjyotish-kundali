@@ -32,9 +32,9 @@ st.markdown(
 with st.sidebar:
     st.header("🔑 API Credentials")
 
-    api_username = st.text_input("API User Name", value="API User Name")
+    api_username = st.text_input("API User Name", placeholder="API User Name")
 
-    api_key = st.text_input("API Key", value="API Key", type="password")
+    api_key = st.text_input("API Key", placeholder="API Key", type="password")
 
     st.markdown("---")
     st.markdown(
