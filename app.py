@@ -31,10 +31,11 @@ st.markdown(
 
 with st.sidebar:
     st.header("🔑 API Credentials")
-    api_username = st.text_input("API User Name", value="4545")
-    api_key = st.text_input(
-        "API Key", value="ByVOIaODH57QRVi6CqswHXGlcpDvj7tZBRoorY", type="password"
-    )
+
+    api_username = st.text_input("API User Name", value="API User Name")
+
+    api_key = st.text_input("API Key", value="API Key", type="password")
+
     st.markdown("---")
     st.markdown(
         """
@@ -45,10 +46,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
     )
-
-
-api_username = "4545"
-api_key = "ByVOIaODH57QRVi6CqswHXGlcpDvj7tZBRoorY"
 
 if not api_username and api_key:
     # Show some warning to the user
